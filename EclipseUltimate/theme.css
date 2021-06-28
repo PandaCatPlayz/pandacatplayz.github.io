@@ -923,7 +923,7 @@
     position: absolute;
     left: -3px;
     height: 100%;
-    width: 220px;
+    width: 225px;
     border-radius: 4px 0 0 4px;
     background: rgba(var(--rgb),1);
     z-index: 0;
