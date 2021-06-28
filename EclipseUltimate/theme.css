@@ -925,8 +925,7 @@
     height: 100%;
     width: 20px;
     border-radius: 4px 0 0 4px;
-    background: linear-gradient(to right,rgba(var(--rgb),1),rgba(var(--rgb),.1));
-    -webkit-mask: linear-gradient(to right,#000,rgba(var(--rgb),.1));
+    background: rgba(var(--rgb),1);
     z-index: 0;
   }
   /* .message-2qnXI6:hover{
