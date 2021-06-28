@@ -924,7 +924,7 @@
     left: -3px;
     height: 100%;
     width: 250px;
-    border-radius: 4px 0 0 4px;
+    border-radius: 4px 4px 4px 4px;
     background: rgba(var(--rgb),1);
     z-index: 0;
   }
