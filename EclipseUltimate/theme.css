@@ -908,8 +908,8 @@
     height: 100%;
     width: 20px;
     border-radius: 4px 0 0 4px;
-    background: linear-gradient(to right,white,Transparent);
-    -webkit-mask: linear-gradient(to right,#000,Transparent);
+    background: linear-gradient(to right,rgba(var(--rgb),1),rgba(var(--rgb),.1));
+    -webkit-mask: linear-gradient(to right,#000,rgba(var(--rgb),.1));
     opacity: .7;
   }
   /* .modeSelected-346R90 .mainContent-u_9PKf:before{
