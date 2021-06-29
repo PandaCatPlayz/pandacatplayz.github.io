@@ -1,5 +1,3 @@
-@import url('https://discord-custom-covers.github.io/usrbg/dist/usrbg.css');
-
 :root {
   /* main color */
     --rgb: 228, 59, 68;
@@ -2093,27 +2091,10 @@
   .headerFill-adLl4x{
       background-color: var(--main-black);
   }
-
-  /* UsrBG Support */
-  .header-QKLPzZ {
-    transform: translateZ(0);
-  }
+  .header-QKLPzZ foreignObject {mask: none !important;}
   
-  .header-QKLPzZ .wrapper-3t9DeA::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.25;
-    pointer-events: none;
-    background: var(--user-background) center/cover no-repeat;
-  }
-  
-  .headerInfo-30uryT {
-    position: relative;
-    z-index: 1;
+  .header-QKLPzZ{
+      padding:0;
   }
   .avatar-3EQepX{
       height:200px!important;
