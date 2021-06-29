@@ -906,7 +906,7 @@
     left: -3px;
     top: 0;
     height: 100%;
-    width: 20px;
+    width: 40px;
     border-radius: 4px 0 0 4px;
     background: linear-gradient(to right,rgba(var(--rgb),1),rgba(var(--rgb),.1));
     -webkit-mask: linear-gradient(to right,#000,rgba(var(--rgb),.1));
