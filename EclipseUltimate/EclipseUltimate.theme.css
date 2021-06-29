@@ -1,12 +1,14 @@
 /**
  * @name EclipseUltimate
  * @author PandaCatPlayz
- * @description Ultimate Dark Theme Based On Next's Eclipse Simple Dark Theme
+ * @description Ultimate Dark Theme Based On Next's Eclipse Simple Dark Theme, But With Some Fun Twists
  * @version 0.1
  * @authorId 496816561244471347
  */
 
 @import url(https://pandacatplayz.github.io/EclipseUltimate/theme.css);
+@import url(https://pandacatplayz.github.io/EclipseUltimate/usrbg.css);
+
 :root {
    /* Main color */
    --rgb: 228, 59, 68;
