@@ -1,3 +1,3 @@
 # pandacatplayz.github.io
 
-so many code pings. so.. many...
+Repository specifically for hosting all my code stuff, imports and web pages galore.
