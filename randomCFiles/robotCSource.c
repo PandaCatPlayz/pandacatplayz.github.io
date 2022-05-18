@@ -1,7 +1,7 @@
 // Sensor and motor initilizers
 #pragma config(Sensor, in1, lightsensor, sensorReflection)
 #pragma config(Sensor, dgtl1, encoder,  sensorQuadEncoder)
-#pragma config(Sensor, dgtl3, red, sensorLEDtoVCC)
+#pragma config(Sensor, dgtl12, red, sensorLEDtoVCC)
 #pragma config(Sensor, dgtl4, green, sensorLEDtoVCC)
 #pragma config(Motor, port3, flashlight, tmotorVexFlashlight, openLoop, reversed)
 #pragma config(Motor, port2, motor, tmotorVex393_MC29, openLoop)
@@ -11,13 +11,13 @@ task main()
 {
     // Initialize variables
     int waitTime = 4;
-    int speed = 50;
-    int maxEncode = 120;
+    int speed = 45;
+    int maxEncode = 119;
     int minEncode = -115;
 
     // Initializes flashlight and off LED
     turnFlashlightOn(port3,100);
-    turnLEDOn(dgtl3);
+    turnLEDOn(dgtl12);
 
     // Wait
     wait(waitTime);
@@ -27,7 +27,7 @@ task main()
         // Detects when the light sensor is NOT BELOW OR EQUAL TO 52
         if(SensorValue[in1]>=100) {
             // Toggle LEDs
-            turnLEDOff(dgtl3);
+            turnLEDOff(dgtl5);
             turnLEDOn(dgtl4);
 
             // Wait
@@ -46,7 +46,7 @@ task main()
             stopMotor(port2);
 
             // Toggle LEDs
-            turnLEDOn(dgtl3);
+            turnLEDOn(dgtl12);
             turnLEDOff(dgtl4);
         }
     }
