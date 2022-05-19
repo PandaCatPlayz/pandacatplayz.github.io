@@ -12,7 +12,7 @@ task main()
     // Initialize variables
     int waitTime = 4;
     int speed = 45;
-    int maxEncode = 119;
+    int maxEncode = 127;
     int minEncode = -115;
 
     // Initializes flashlight and off LED
@@ -27,7 +27,7 @@ task main()
         // Detects when the light sensor is NOT BELOW OR EQUAL TO 52
         if(SensorValue[in1]>=100) {
             // Toggle LEDs
-            turnLEDOff(dgtl5);
+            turnLEDOff(dgtl12);
             turnLEDOn(dgtl4);
 
             // Wait
