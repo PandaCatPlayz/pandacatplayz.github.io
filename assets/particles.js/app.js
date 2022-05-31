@@ -8,7 +8,7 @@ particlesJS('particles-container', {
         }
       },
       "color": {
-        "value": "#F06292"
+        "value": "#ffffff"
       },
       "shape": {
         "type": "polygon",
