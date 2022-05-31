@@ -1,10 +1,10 @@
 particlesJS('particles-container', {
     "particles": {
       "number": {
-        "value": 80,
+        "value": 114,
         "density": {
           "enable": true,
-          "value_area": 800
+          "value_area": 947.0220103698913
         }
       },
       "color": {
@@ -17,7 +17,7 @@ particlesJS('particles-container', {
           "color": "#000000"
         },
         "polygon": {
-          "nb_sides": 5
+          "nb_sides": 6
         },
         "image": {
           "src": "img/github.svg",
@@ -26,7 +26,7 @@ particlesJS('particles-container', {
         }
       },
       "opacity": {
-        "value": 0,
+        "value": 0.5,
         "random": false,
         "anim": {
           "enable": false,
@@ -36,7 +36,7 @@ particlesJS('particles-container', {
         }
       },
       "size": {
-        "value": 3,
+        "value": 1,
         "random": true,
         "anim": {
           "enable": false,
@@ -47,15 +47,15 @@ particlesJS('particles-container', {
       },
       "line_linked": {
         "enable": true,
-        "distance": 189.39543399174545,
-        "color": "#F06292",
-        "opacity": 0.4,
-        "width": 1.5782952832645454
+        "distance": 150,
+        "color": "#f06292",
+        "opacity": 0.5928917091305328,
+        "width": 1.6024100246771156
       },
       "move": {
         "enable": true,
-        "speed": 5,
-        "direction": "top",
+        "speed": 6,
+        "direction": "none",
         "random": false,
         "straight": false,
         "out_mode": "out",
@@ -75,8 +75,8 @@ particlesJS('particles-container', {
           "mode": "grab"
         },
         "onclick": {
-          "enable": true,
-          "mode": "bubble"
+          "enable": false,
+          "mode": "repulse"
         },
         "resize": true
       },
@@ -89,9 +89,9 @@ particlesJS('particles-container', {
         },
         "bubble": {
           "distance": 400,
-          "size": 3.996003996003996,
-          "duration": 0.5594405594405595,
-          "opacity": 0.44755244755244755,
+          "size": 40,
+          "duration": 2,
+          "opacity": 8,
           "speed": 3
         },
         "repulse": {
