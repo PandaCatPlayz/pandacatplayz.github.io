@@ -8,7 +8,7 @@ particlesJS('particles-container', {
         }
       },
       "color": {
-        "value": "#ffffff"
+        "value": "#F06292"
       },
       "shape": {
         "type": "polygon",
@@ -48,7 +48,7 @@ particlesJS('particles-container', {
       "line_linked": {
         "enable": true,
         "distance": 189.39543399174545,
-        "color": "#6900ff",
+        "color": "#F06292",
         "opacity": 0.4,
         "width": 1.5782952832645454
       },
