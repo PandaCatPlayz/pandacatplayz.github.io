@@ -15,8 +15,8 @@ pre, span, div, p, h1 {
   color: white;
 
   font-family: 'Source Code Pro', monospace;
-  
-  cursor: none;
+
+  cursor: none !important;
 }
 
 pre {
