@@ -65,3 +65,6 @@ pre {
   bottom: 5%;
 }
 
+.no-cursor {
+  cursor: none;
+}
