@@ -1,2 +1,2 @@
-$answer = shell_exec("test.exe");
+$answer = shell_exec("E://test.exe");
 echo $answer."</br>"; 
