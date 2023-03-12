@@ -125,7 +125,8 @@ img.featured {
 img.banner {
   display: block;
   height: 100px;
-  width: auto;
+  width: 1920px;
+  overflow: hidden;
   margin-left: 0px;
   margin-right: 0px;
 }
