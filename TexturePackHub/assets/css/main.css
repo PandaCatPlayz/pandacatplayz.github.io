@@ -108,12 +108,10 @@ body {
 }
 
 div.centered-title {
-  display: block;
   text-align: center;
   padding: 50px;
 }
 div.main-div {
-  display: block;
   margin: 25px;
 }
 
