@@ -127,6 +127,7 @@ img.banner {
   width: 100%;
   height: 200px;
   object-fit: cover;
+  object-position: 50% 25%;
 }
 
 hr {
