@@ -124,7 +124,7 @@ img.featured {
 }
 img.banner {
   display: block;
-  height: 10%;
+  height: 100px;
   width: auto;
   margin-left: 0px;
   margin-right: 0px;
