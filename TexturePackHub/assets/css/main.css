@@ -130,6 +130,18 @@ img.banner {
   object-position: 50% 25%;
 }
 
+a.download-btn {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+span.pack-tag {
+  float: right;
+}
+
 hr {
   margin: 1rem 0;
   color: inherit;
