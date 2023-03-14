@@ -129,6 +129,13 @@ img.banner {
   object-fit: cover;
   object-position: 50% 25%;
 }
+img.pack {
+  display: block;
+  width: 50%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 a.download-btn {
   width: 100%;
