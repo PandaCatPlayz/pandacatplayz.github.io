@@ -1,0 +1,23 @@
+TODO:
+    /all/
+    - Add Vaporwave sakura somewhere, navbar?
+
+    ../
+    
+    ../18/
+    - Add image for SakuraBridgeOverlay
+    - Move pack thumnails into the ../assets/images/packs/ folder as opposed to ../assets/packs/18
+    - Finish blue pack
+    - Make orange pack
+    
+    ../116/
+    - Add all my 1.16 packs
+    
+    ../119/
+    - Move PPP to 1.19 as well as 1.16
+    
+    ../pricing/
+    - Make a messaging system with fields for game version (dropdown), type of pack (check boxes), amount of colors (dropdown), amount of textures changed (slider), auto price calculator (js), email (text box [tiny] w/ vaildator), preferred name (text box [small]), notes (text box [large])
+    
+    ../artists/
+    - Recruit new artists to list packs on the site
