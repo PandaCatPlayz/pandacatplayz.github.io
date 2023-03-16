@@ -61,7 +61,19 @@
                     <legend>Pack Form:</legend>
                     <div class="form-group">
                         <!-- METHOD OF CONTACT -->
+                        <label class="form-label mt-4">Method of Contact</label>
+                        <select class="form-select" id="artistSelect">
+                            <option>Select one</option>
+                            <option>Email</option>
+                            <option>Discord</option>
+                            <option>SMS Texting</option>
+                        </select>
+
                         <!-- USERNAME ON METHOD OF CONTACT -->
+                        <label class="form-label mt-4">Email / Username / Number</label>
+                        <input class="form-control" id="inputUsername" aria-describedby="username" placeholder="Enter here...">
+                        <small class="form-text text-muted">We'll never share your information with anyone else.</small>
+
                         <!-- SELECT ARTIST -->
                         <label class="form-label mt-4">Select Artist</label>
                         <select class="form-select" id="artistSelect">
@@ -70,7 +82,20 @@
                         </select>
 
                         <!-- SELECT VERSION -->
-                        <!-- SELECT TYPE OF TEXTURES -->
+                        <label class="form-label mt-4">Select Version</label>
+                        <input class="form-control" id="inputVersion" aria-describedby="Version" placeholder="Enter here...">
+
+                        <!-- SELECT TYPEs OF TEXTURES -->
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="blocksCheck">
+                            <label class="form-check-label" for="flexCheckDefault">Blocks</label>
+                            <input class="form-check-input" type="checkbox" value="" id="itemsCheck">
+                            <label class="form-check-label" for="flexCheckDefault">Items</label>
+                            <input class="form-check-input" type="checkbox" value="" id="particlesCheck">
+                            <label class="form-check-label" for="flexCheckDefault">Particles</label>
+                            <input class="form-check-input" type="checkbox" value="" id="armorCheck">
+                            <label class="form-check-label" for="flexCheckDefault">Armor</label>
+                        </div>
                     </div>
                 </fieldset>
             </form>
