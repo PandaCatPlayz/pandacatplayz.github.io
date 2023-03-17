@@ -58,16 +58,16 @@ function calculateCost() {
         price += 0.25;
     }
 
-    if(textures.ariaValueNow > 10 && textures.ariaValueNow <= 25) {
+    if(textures.ariaValueText > 10 && textures.ariaValueText <= 25) {
         price += 0.25;
     }
-    else if(textures.ariaValueNow > 25 && textures.ariaValueNow <= 50) {
+    else if(textures.ariaValueText > 25 && textures.ariaValueText <= 50) {
         price += 2;
     }
-    else if(textures.ariaValueNow > 50 && textures.ariaValueNow <= 75) {
+    else if(textures.ariaValueText > 50 && textures.ariaValueText <= 75) {
         price += 5;
     }
-    else if(textures.ariaValueNow > 75) {
+    else if(textures.ariaValueText > 75) {
         price += 10;
     }
 
