@@ -84,6 +84,7 @@
                         <input class="form-control" id="inputVersion" aria-describedby="Version" placeholder="Enter here...">
 
                         <!-- SELECT TYPEs OF TEXTURES -->
+                        <label class="form-label mt-4">Select Textures</label>
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="blocksCheck">
                             <label class="form-check-label" for="flexCheckDefault">Blocks</label>
@@ -104,6 +105,18 @@
                             <input class="form-check-input" type="checkbox" value="" id="animatedCheck">
                             <label class="form-check-label" for="flexCheckDefault">Animated</label>
                         </div>
+
+                        <!-- NUMBER OF COLORS -->
+                        <label class="form-label mt-4">Number Of Colors</label>
+                        <select class="form-select" id="artistSelect">
+                            <option>Select one</option>
+                            <option>One</option>
+                            <option>Two</option>
+                        </select>
+
+                        <!-- NUMBER OF TEXTURES -->
+                        <label class="form-label mt-4">Number of Textures</label>
+                        <input type="range" class="form-range" min="1" max="100" step="1" id="textureNumber">
                     </div>
                 </fieldset>
             </form>
