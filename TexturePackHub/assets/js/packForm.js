@@ -10,7 +10,7 @@ function sendToExcell() {
     var gui = document.getElementById("GUICheck");
     var animated = document.getElementById("animatedCheck");
     var colors = document.getElementById("colorSelect");
-    var textures = document.getElementById("textureRange");
+    var textures = document.getElementById("textureAmount");
     var complete = document.getElementById("formComplete");
 }
 
@@ -22,7 +22,7 @@ function calculateCost() {
     var gui = document.getElementById("GUICheck");
     var animated = document.getElementById("animatedCheck");
     var colors = document.getElementById("colorSelect");
-    var textures = document.getElementById("textureRange");
+    var textures = document.getElementById("textureAmount");
     var complete = document.getElementById("formComplete");
 
     var price = 0;
@@ -31,44 +31,44 @@ function calculateCost() {
         price = 5;
     }
 
-    if(blocks.ariaChecked) {
+    if(blocks.value == "blocks") {
+        price += 4;
+    }
+
+    if(items.value == "items") {
         price += 1;
     }
 
-    if(items.ariaChecked) {
-        price += 0.5;
+    if(particles.value == "particles") {
+        price += 1;
     }
 
-    if(particles.ariaChecked) {
-        price += 0.25;
+    if(gui.value == "gui") {
+        price += 1;
     }
 
-    if(gui.ariaChecked) {
-        price += 0.25;
-    }
-
-    if(animated.ariaChecked) {
-        price += 2;
+    if(animated.value == "animated") {
+        price += 4;
     }
 
     if(colors.value == "One") {
-        price += 0.1;
+        price += 0.5;
     }
     else if(colors.value == "Two") {
-        price += 0.25;
+        price += 1;
     }
 
-    if(textures.ariaValueText > 10 && textures.ariaValueText <= 25) {
-        price += 0.25;
+    if(textures.value > 10 && textures.value <= 25) {
+        price += 1;
     }
-    else if(textures.ariaValueText > 25 && textures.ariaValueText <= 50) {
-        price += 2;
-    }
-    else if(textures.ariaValueText > 50 && textures.ariaValueText <= 75) {
+    else if(textures.value > 25 && textures.value <= 50) {
         price += 5;
     }
-    else if(textures.ariaValueText > 75) {
+    else if(textures.value > 50 && textures.value <= 75) {
         price += 10;
+    }
+    else if(textures.value > 75) {
+        price += 25;
     }
 
     complete.innerHTML = "Form Completed: $" + price;
