@@ -72,6 +72,11 @@
                         <!-- USERNAME ON METHOD OF CONTACT -->
                         <label class="form-label mt-4">Email / Username / Number</label>
                         <input class="form-control" id="inputUsername" aria-describedby="username" placeholder="Enter here...">
+
+                        <!-- PREFERRED NAME -->
+                        <label class="form-label mt-4">Preferred Name</label>
+                        <input class="form-control" id="inputName" aria-describedby="name" placeholder="Enter here...">
+
                         <!-- SELECT ARTIST -->
                         <label class="form-label mt-4">Select Artist</label>
                         <select class="form-select" id="artistSelect">
@@ -81,7 +86,12 @@
 
                         <!-- SELECT VERSION -->
                         <label class="form-label mt-4">Select Version</label>
-                        <input class="form-control" id="inputVersion" aria-describedby="Version" placeholder="Enter here...">
+                        <select class="form-select" id="versionSelect">
+                            <option>Select one</option>
+                            <option>1.8</option>
+                            <option>1.16</option>
+                            <option>1.19</option>
+                        </select>
 
                         <!-- SELECT TYPEs OF TEXTURES -->
                         <label class="form-label mt-4">Select Textures</label>
@@ -115,7 +125,7 @@
                         </select>
 
                         <!-- NUMBER OF TEXTURES -->
-                        <label class="form-label mt-4">Number of Textures</label>
+                        <label class="form-label mt-4">Approximate Number of Textures (1-100)</label>
                         <input type="range" class="form-range" min="1" max="100" step="1" id="textureNumber">
                     </div>
                 </fieldset>
