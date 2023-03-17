@@ -62,7 +62,7 @@
                     <div class="form-group">
                         <!-- METHOD OF CONTACT -->
                         <label class="form-label mt-4">Method of Contact</label>
-                        <select class="form-select" id="artistSelect">
+                        <select class="form-select" id="contactSelect">
                             <option>Select one</option>
                             <option>Email</option>
                             <option>Discord</option>
@@ -117,18 +117,26 @@
                         </div>
 
                         <!-- NUMBER OF COLORS -->
-                        <label class="form-label mt-4">Number Of Colors</label>
-                        <select class="form-select" id="artistSelect">
+                        <label class="form-label mt-4">Number Of Colors In Gradient</label>
+                        <select class="form-select" id="colorSelect">
                             <option>Select one</option>
                             <option>One</option>
                             <option>Two</option>
                         </select>
 
                         <!-- NUMBER OF TEXTURES -->
-                        <label class="form-label mt-4">Approximate Number of Textures (1-100)</label>
-                        <input type="range" class="form-range" min="1" max="100" step="1" id="textureNumber">
+                        <label class="form-label mt-4">Approximate Number of Textures (1-100, for over 100 textures say so in notes)</label>
+                        <input type="range" class="form-range" id="textureRange" min="1" max="100" step="1" id="textureNumber">
+
+                        <!-- NOTES -->
+                        <label class="form-label mt-4">Notes</label>
+                        <textarea class="form-control" id="notes" rows="3" spellcheck="true" style="height: 301px;"></textarea>
                     </div>
                 </fieldset>
+                <pre>
+
+                </pre>
+                <button type="submit" class="btn btn-primary" id="submit">Submit</button>
             </form>
         </div>
     </body>
