@@ -1,4 +1,4 @@
-function sendToExcell() {
+function sendToDiscord() {
     var contact = document.getElementById("contactSelect");
     var username = document.getElementById("inputUsername");
     var name = document.getElementById("inputName");
@@ -11,7 +11,20 @@ function sendToExcell() {
     var animated = document.getElementById("animatedCheck");
     var colors = document.getElementById("colorSelect");
     var textures = document.getElementById("textureAmount");
-    var complete = document.getElementById("formComplete");
+    var notes = document.getElementById("notes");
+
+    const request = new XMLHttpRequest();
+    request.open("POST", "https://discord.com/api/webhooks/1086471521373012109/wx-3PcXiqQcFVg6hw2MXRuZWUL7bTFX_zeuaIAmnYAbh6-V2DR5-m4eWFHk2-5D_-9AL");
+
+    request.setRequestHeader('Content-type', 'application/json');
+
+    const params = {
+      username: "TexturePackHub Commission Bot",
+      avatar_url: "",
+      content: "New Texture Pack Request!\nContact Method: " + contact.value + "\nEmail / Username / Number: " + username.value + "\nPreferred Name: " + name.value + "\nArtist: "  + artist.value + "\nVersion: " + version.value + "\nBlocks: " + blocks.value + "\nItems: " + items.value + "\nParticles: " + particles.value + "\nGUI: " + gui.value + "\nAnimated: " + animated.value + "\mColors in Gradient: " + colors.value + "\nTextures: " + textures.value + "\nNotes: " + notes.value
+    }
+
+    request.send(JSON.stringify(params));
 }
 
 function calculateCost() {
