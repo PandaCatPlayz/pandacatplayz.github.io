@@ -14,7 +14,7 @@ function sendToDiscord() {
     var notes = document.getElementById("notes");
 
     const request = new XMLHttpRequest();
-    request.open("POST", "https://discord.com/api/webhooks/1086471521373012109/wx-3PcXiqQcFVg6hw2MXRuZWUL7bTFX_zeuaIAmnYAbh6-V2DR5-m4eWFHk2-5D_-9AL");
+    request.open("POST", "https://discord.com/api/webhooks/1086869669631246356/HQjPQIVYruozLMjh2uWQ_XEBQn6TcX2kt2yOUkqyU6gG2LYjpX6rwUsyRij2E9uV-0RW");
 
     request.setRequestHeader('Content-type', 'application/json');
 
