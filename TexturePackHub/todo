@@ -16,7 +16,12 @@ TODO:
     - Move PPP to 1.19 as well as 1.16
     
     ../pricing/
-    - Make a messaging system with fields for game version (dropdown), type of pack (check boxes), amount of colors (dropdown), amount of textures changed (slider), auto price calculator (js), email (text box [tiny]), preferred name (text box), notes (text box)
+    - Send to webhook
     
+    ../givaways/
+    - Add main page
+    - Add link locker
+    - Add giveaway bot in discord server behind link locker
+
     ../artists/
     - Recruit new artists to list packs on the site
