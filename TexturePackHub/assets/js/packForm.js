@@ -13,16 +13,29 @@ function sendToDiscord() {
     var textures = document.getElementById("textureAmount");
     var notes = document.getElementById("notes");
 
-    const request = new XMLHttpRequest();
-    request.open("POST", "https://webhook.site/5f80e763-0dc6-40b6-9799-6c9ec8311d4a");
+    var url = new URL("https://webhook.site/5f80e763-0dc6-40b6-9799-6c9ec8311d4a");
+    var payload = JSON.stringify({
+        "contact": contact.value,
+        "username": username.value,
+        "name": name.value,
+        "artist": artist.value,
+        "version": version.value,
+        "blocks": blocks.value,
+        "items": items.value,
+        "particles": particles.value,
+        "gui": gui.value,
+        "animated": animated.value,
+        "colors": colors.value,
+        "textures": textures.value,
+        "notes": notes.value
+    });
+    var options = {
+        method: 'POST',
+        body: payload,
+        redirect: 'follow'
+    };
 
-    request.setRequestHeader('Content-type', 'application/json');
-
-    const params = {
-      content: "New Texture Pack Request!\nContact Method: " + contact.value + "\nEmail / Username / Number: " + username.value + "\nPreferred Name: " + name.value + "\nArtist: "  + artist.value + "\nVersion: " + version.value + "\nBlocks: " + blocks.value + "\nItems: " + items.value + "\nParticles: " + particles.value + "\nGUI: " + gui.value + "\nAnimated: " + animated.value + "\mColors in Gradient: " + colors.value + "\nTextures: " + textures.value + "\nNotes: " + notes.value
-    }
-
-    request.send(JSON.stringify(params));
+    fetch(url, options).then(response => response.text());
 }
 
 function calculateCost() {
