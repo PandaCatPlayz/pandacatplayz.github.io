@@ -13,6 +13,7 @@ function sendToDiscord() {
     var textures = document.getElementById("textureAmount");
     var notes = document.getElementById("notes");
 
+    var http = new XMLHttpRequest();
     var url = "https://webhook.site/5f80e763-0dc6-40b6-9799-6c9ec8311d4a";
     var payload = JSON.stringify({
         "contact": contact.value,
@@ -30,9 +31,9 @@ function sendToDiscord() {
         "notes": notes.value
     });
 
-    oReq.open("POST", url);
-    oReq.setRequestHeader('Content-Type', 'application/json');
-    oReq.send(payload);
+    http.open("POST", url, true);
+    http.setRequestHeader('Content-type', 'application/json');
+    http.send(payload);
 }
 
 function calculateCost() {
