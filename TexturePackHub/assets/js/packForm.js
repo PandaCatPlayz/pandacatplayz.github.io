@@ -1,4 +1,4 @@
-function sendToDiscord() {
+function sendToWebhook() {
     var contact = document.getElementById("contactSelect");
     var username = document.getElementById("inputUsername");
     var name = document.getElementById("inputName");
